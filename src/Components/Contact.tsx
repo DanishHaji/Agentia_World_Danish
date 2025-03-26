@@ -36,7 +36,7 @@ const Contact = () => {
                     {/* Social Media Links */}
                     <div className="flex justify-center md:justify-start space-x-4 mt-6">
                         {[{ icon: Github, link: "#" }, { icon: Linkedin, link: "#" }, { icon: Twitter, link: "#" }].map((item, index) => (
-                            <a key={index} href={item.link} className="text-gray-400 hover:text-purple-500 transition duration-300">
+                            <a key={index} href={item.link} aria-label='social links' className="text-gray-400 hover:text-purple-500 transition duration-300">
                                 <item.icon size={24} />
                             </a>
                         ))}
